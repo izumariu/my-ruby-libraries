@@ -30,4 +30,10 @@ class Array
 		self.length.times{a_r.push c}
 		return a_r
 	end
+
+	def fork
+		a_r = Array.new
+		2.times{a_r << self}
+		return a_r
+	end
 end
