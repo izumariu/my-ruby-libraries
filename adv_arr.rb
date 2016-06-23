@@ -1,12 +1,6 @@
-class AdvancedArray
-	def initialize
-		@array = Array.new
-	end
-
-	attr_accessor :array
-	
+class Array
 	def contains?(thing)
-		@array.each do |i|
+		self.each do |i|
 			if i == thing
 			return true
 			end
