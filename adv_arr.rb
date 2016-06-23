@@ -21,4 +21,13 @@ class Array
 		end
 		return a_r
 	end
+
+	def equalize(item)
+		!(item.is_a? Integer) ? false : ()
+		item >= self.length ? item=-1 : ()
+		a_r = Array.new
+		c = self[item]
+		self.length.times{a_r.push c}
+		return a_r
+	end
 end
