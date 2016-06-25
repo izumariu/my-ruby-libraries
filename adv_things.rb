@@ -36,4 +36,41 @@ class Array
 		2.times{a_r << self}
 		return a_r
 	end
+
+	def magnetize(item)
+		!(item.is_a? Integer) ? false : ()
+		item >= self.length ? item=-1 : ()
+		a_r = Array.new
+		
+	end
+end
+
+class String
+	def fork
+		s_r = String.new
+		2.times{s_r<<self}
+		return s_r
+	end
+
+	def sprint
+		print(self)
+	end
+
+	def sputs
+		puts(self)
+	end
+end
+
+class Integer
+	def dsum
+		i_r = 0
+		self.to_s.split("").each{|x|i_r+=x.to_i}
+		return i_r
+	end
+
+	def dprod
+		i_r = 0
+		self.to_s.split("").each{|x|i_r*=x.to_i}
+		return i_r
+	end
 end
